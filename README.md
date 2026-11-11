@@ -41,6 +41,15 @@ Unknown sequence `ATGCGCGATC` is predicted as **Group A** (estimated model proba
 - `results/metrics.json` - recorded metrics from the exact uploaded CSV and fixed model configuration.
 - `results/REPORT.md` - report text and interpretation. The formatted four-page PDF is supplied separately with the project deliverables.
 
+## Download the committed dataset
+The exact dataset used for the reported metrics is stored in `data/dna_sequence_dataset.csv.gz`. Download it from the repository and decompress it to recover `dna_sequence_dataset.csv`:
+
+```bash
+gunzip -k data/dna_sequence_dataset.csv.gz
+```
+
+On Windows, 7-Zip can extract the `.gz` file. The decompressed file is the original CSV with 2,000 rows and six extracted features.
+
 ## Run locally
 Install dependencies and run:
 
