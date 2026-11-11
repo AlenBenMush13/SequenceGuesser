@@ -1,0 +1,21 @@
+{
+  "dataset_samples": 2000,
+  "samples_per_group": 1000,
+  "fragment_length": 10,
+  "sources": {
+    "Group A": "Escherichia coli K-12 MG1655 (NC_000913.3)",
+    "Group B": "Mycoplasma genitalium G37 (NC_000908.2)"
+  },
+  "model": "DecisionTreeClassifier(max_depth=4, random_state=42)",
+  "split": "Stratified 80/20, random_state=42",
+  "test_accuracy": 0.7375,
+  "correct": 295,
+  "incorrect": 105,
+  "majority_baseline": 0.5,
+  "confusion_matrix_labels": ["Group A", "Group B"],
+  "confusion_matrix": [[146, 54], [51, 149]],
+  "unknown_sequence": "ATGCGCGATC",
+  "unknown_prediction": "Group A",
+  "unknown_probabilities": {"Group A": 0.84651163, "Group B": 0.15348837},
+  "unknown_true_label_available": false
+}
